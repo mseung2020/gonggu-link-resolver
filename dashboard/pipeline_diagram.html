@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>링크 해석 모듈 파이프라인</title>
+<style>
+  body { font-family: -apple-system, "Apple SD Gothic Neo", sans-serif; background:#0f0f10; color:#eee; margin:0; padding:40px 20px 80px; }
+  h1 { text-align:center; font-size:19px; color:#ccc; margin-bottom:6px; font-weight:600; }
+  .subtitle { text-align:center; font-size:12.5px; color:#777; margin-bottom:28px; }
+  .legend { display:flex; gap:18px; justify-content:center; flex-wrap:wrap; margin-bottom:36px; font-size:11.5px; color:#999; }
+  .legend span { display:inline-flex; align-items:center; gap:6px; }
+  .legend i { width:12px; height:12px; border-radius:3px; display:inline-block; }
+  .flow { display:flex; flex-direction:column; align-items:center; gap:0; max-width:1080px; margin:0 auto; }
+  .box { border-radius:10px; padding:13px 18px; font-size:13.5px; text-align:center; min-width:250px; line-height:1.5; box-shadow:0 2px 8px rgba(0,0,0,.3); }
+  .box .tag { display:block; font-size:10.5px; opacity:.75; margin-bottom:4px; letter-spacing:.03em; }
+  .box small { display:block; font-size:11px; opacity:.75; margin-top:4px; }
+  .input   { background:#26324a; border:1px solid #3a4c70; }
+  .analyze { background:#3a2a52; border:1px solid #5b3f82; }
+  .auto    { background:#2a3a2a; border:1px solid #47643f; }
+  .check   { background:#4a3a1a; border:1px solid #7a5f2a; font-size:13px; }
+  .end-ok    { background:#153a20; border:1px solid #2b7a3f; color:#9fe6b0; }
+  .end-none  { background:#232323; border:1px solid #444; color:#aaa; }
+  .end-fail  { background:#3a1515; border:1px solid #7a2b2b; color:#f0a0a0; }
+  .arrow { color:#666; font-size:20px; line-height:1; margin:2px 0; }
+  .label { color:#888; font-size:11.5px; margin:4px 0 8px; text-align:center; max-width:600px; }
+  .branch-row { display:flex; gap:40px; align-items:flex-start; justify-content:center; width:100%; flex-wrap:wrap; }
+  .branch-col { display:flex; flex-direction:column; align-items:center; }
+  .loopbox { border:1px dashed #5b3f82; border-radius:14px; padding:24px 28px 18px; margin-top:10px; background:rgba(90,60,130,.06); }
+  .loopnote { color:#c9a44a; font-size:11.5px; margin-top:10px; border:1px dashed #7a5f2a; border-radius:6px; padding:5px 12px; text-align:center; max-width:560px; }
+  .ends { display:flex; gap:14px; justify-content:center; margin-top:8px; flex-wrap:wrap; }
+  .stagehead { color:#666; font-size:11px; letter-spacing:.08em; text-transform:uppercase; margin:22px 0 4px; }
+</style>
+</head>
+<body>
+<h1>공구왕 링크 해석 모듈 — 전체 흐름</h1>
+<div class="subtitle">포스트 하나가 들어와서, 실제 판매 페이지를 찾거나 "왜 못 찾았는지"까지 결론이 나는 전체 경로</div>
+<div class="legend">
+  <span><i style="background:#3a2a52"></i>AI가 읽고 판단하는 단계</span>
+  <span><i style="background:#2a3a2a"></i>정해진 규칙대로 자동 처리되는 단계</span>
+  <span><i style="background:#4a3a1a"></i>분기점(여기서 갈림)</span>
+  <span><i style="background:#153a20"></i>성공</span>
+  <span><i style="background:#232323"></i>원천적으로 시도 자체가 불가능해서 멈춤</span>
+  <span><i style="background:#3a1515"></i>시도는 했지만 결국 못 찾고 멈춤</span>
+</div>
+
+<div class="flow">
+
+  <div class="box input"><span class="tag">입력</span>포스트 글(캡션/영상설명) + 올라온 날짜 + 이 사람의 프로필/채널 소개글</div>
+  <div class="arrow">↓</div>
+
+  <div class="stagehead">1단계 — 이 글을 읽고 기본 정보 파악하기</div>
+  <div class="box analyze">AI가 글을 읽고 정리한다:
+    <small>· 진짜로 물건을 판매하는 공동구매 글인가?</small>
+    <small>· 무슨 상품을 팔고 있는가 (한 줄 요약)</small>
+    <small>· 언제부터 언제까지 한다고 명시되어 있는가 (날짜가 정확히 써있을 때만)</small>
+    <small>· 글의 말투로 봤을 때 지금 시작 전인지·진행중인지·이미 끝났는지</small>
+    <small>· 구매 링크를 어디서 주는가 (글 본문 / 프로필 소개 / 댓글·DM으로 알려줌 / 안 보임)</small>
+    <small>· 글·프로필에 실제로 적혀있는 링크 주소들</small>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="stagehead">2단계 — 지금 시도해볼 만한 글인지 사전 점검 (규칙 기반, AI 판단 없이 자동)</div>
+  <div class="box check">
+    ① 애초에 공동구매 판매글이 아니라면?<br>
+    ② 시작·종료 날짜가 정확히 적혀있으면, <b>오늘 날짜와 직접 비교</b>해서 아직 시작 전이거나 이미 끝났으면?<br>
+    <small>(날짜가 안 적혀있으면 위 1단계에서 AI가 말투로 추측한 진행상태를 참고)</small><br>
+    ③ 그것도 아니고 아예 쓸 수 있는 링크가 하나도 없으면?
+  </div>
+  <div class="ends">
+    <div class="box end-none">멈춤 — 공동구매 판매글이 아님</div>
+    <div class="box end-none">멈춤 — 아직 시작 안 함</div>
+    <div class="box end-none">멈춤 — 이미 끝남</div>
+    <div class="box end-none">멈춤 — 활용 가능한 링크가 전혀 없음</div>
+  </div>
+  <div class="label">↓ 위 네 가지에 해당하지 않으면(=지금 살아있는 판매글로 보이면) 다음 단계로</div>
+
+  <div class="stagehead">3단계 — 어떤 링크부터 볼지 정리 (규칙 기반)</div>
+  <div class="box check">
+    · 글 본문에 링크가 3개 이상이고, "쿠팡파트너스"·"수수료를 제공받습니다" 같은 제휴광고 고지문이 있으면?<br>
+    <small>→ 이런 글은 특정 상품 하나를 파는 공동구매가 아니라 "추천 상품 여러 개를 나열하는 리뷰" 형태라 스킵</small>
+  </div>
+  <div class="ends">
+    <div class="box end-none">멈춤 — 제휴 광고성 상품 나열글 (특정 상품을 지정할 수 없음)</div>
+  </div>
+  <div class="label">↓ 아니면 실제로 방문할 링크를 하나 정한다 — 여러 개 있으면 앞에서부터 보되, 글자가 중간에 잘려서<br>완전한 주소가 아닌 링크는 건너뛰고 다음 걸 쓴다. 또한 흔한 오타(주소 앞부분이 빠졌거나 중복된 경우)는 자동으로 고쳐서 접속한다.</div>
+
+  <div class="loopbox">
+    <div class="stagehead" style="margin-top:0">4단계 — 페이지 방문 → 판별 (여기서부터 최대 3번까지 반복될 수 있음)</div>
+
+    <div class="box auto"><span class="tag">자동 · 페이지 방문</span>
+      정해둔 링크에 실제로 들어가본다
+      <small>· 목적지로 넘어가는 데 시간이 걸리는 사이트는 한 번 더 기다려준다</small>
+      <small>· 페이지 제목, 대표 이미지, (있다면) 구조화된 상품정보(이름·가격), 본문 텍스트 일부를 모아온다</small>
+      <small>· 위 정보가 하나도 안 잡히면 살짝 기다렸다가 한 번 더 확인해본다(늦게 뜨는 페이지 대응)</small>
+    </div>
+    <div class="arrow">↓</div>
+
+    <div class="box analyze"><span class="tag">AI · 이 페이지가 뭔지 판별</span>
+      모아온 정보 + 원래 글이 팔던 상품을 같이 보고 판단한다:<br>
+      "이 페이지가 상품 상세페이지인가? 그리고 그게 <b>원래 글이 팔던 그 상품이 맞는가</b>,<br>
+      아니면 쇼핑몰 메인/카테고리인가, 로그인이 막혀있는가, 여러 링크를 모아둔 중간 페이지인가, 아예 무관한 페이지인가?"
+    </div>
+
+    <div class="ends" style="margin-top:12px;">
+      <div class="box end-ok">✅ 상품 상세페이지 + 원래 그 상품 맞음<br><small>→ 상품명·가격·이미지 저장, 완료</small></div>
+      <div class="box end-fail">상품 상세페이지이긴 한데<br>원래 글의 상품과 다름</div>
+      <div class="box end-fail">쇼핑몰 메인/카테고리 페이지<br>(특정 상품을 못 짚음)</div>
+      <div class="box end-fail">로그인 요구 / 접근 차단<br>(안티봇)</div>
+      <div class="box end-fail">상품과 무관한 페이지</div>
+    </div>
+
+    <div class="loopnote">↳ 판별 결과가 "여러 링크를 모아둔 중간 페이지"라면 계속 진행 ↓</div>
+
+    <div class="branch-col" style="margin-top:6px;">
+      <div class="box auto"><span class="tag">자동 · 이 페이지의 링크들 긁어오기</span>
+        페이지 안에 있는 모든 링크를 모은다 (스팸·광고성 사이트는 미리 제외, 게시판형 사이트처럼<br>
+        관련없는 메뉴 링크가 지나치게 많이 잡히는 경우 상위 80개까지만)
+      </div>
+      <div class="ends" style="margin-top:8px;">
+        <div class="box end-fail">이 페이지에서 링크를 하나도 못 찾음</div>
+      </div>
+      <div class="label">↓ 링크를 찾았다면</div>
+      <div class="box analyze"><span class="tag">AI · 이 중에 어떤 링크가 맞을지 고르기</span>
+        원래 글이 팔던 상품과 각 링크의 글자(버튼 이름 등)를 비교해서<br>가장 그럴듯한 링크 하나를 고른다 (문의·상담·SNS 계정 같은 구매와 무관한 링크는 제외)
+      </div>
+      <div class="ends" style="margin-top:8px;">
+        <div class="box end-fail">그럴듯한 링크를 하나도 못 고름</div>
+      </div>
+      <div class="label">↓ 링크를 골랐다면 → 위 "4단계: 페이지 방문"으로 되돌아가서 그 링크로 다시 시도</div>
+    </div>
+
+    <div class="loopnote" style="margin-top:14px;">이 되돌아가기를 3번까지 허용 — 3번을 넘도록 계속 "중간 페이지"만 나오면 그만두고 미해결로 종료</div>
+  </div>
+
+</div>
+</body>
+</html>

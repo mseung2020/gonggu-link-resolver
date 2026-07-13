@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>공구왕 링크 해석 모듈 — 테스트 대시보드</title>
+<style>
+  :root { color-scheme: dark; }
+  body { font-family: -apple-system, "Apple SD Gothic Neo", sans-serif; background:#111; color:#eee; margin:0; }
+  header { padding:14px 20px; background:#1b1b1b; border-bottom:1px solid #333; display:flex; gap:20px; align-items:center; position:sticky; top:0; z-index:2; }
+  header h1 { font-size:15px; margin:0; font-weight:600; }
+  .stats { display:flex; gap:14px; font-size:12px; color:#aaa; }
+  .stats b { color:#eee; }
+  .filters { display:flex; gap:8px; margin-left:auto; }
+  .filters button { background:#2a2a2a; color:#ccc; border:1px solid #3a3a3a; border-radius:6px; padding:4px 10px; font-size:12px; cursor:pointer; }
+  .filters button.active { background:#3a5; color:#fff; border-color:#3a5; }
+  table { width:100%; border-collapse:collapse; font-size:12.5px; }
+  th, td { padding:6px 10px; border-bottom:1px solid #262626; text-align:left; vertical-align:top; }
+  th { background:#1b1b1b; position:sticky; top:49px; color:#999; font-weight:500; z-index:1; }
+  tr:hover { background:#1a1a1a; }
+  .plat { padding:1px 6px; border-radius:4px; font-size:11px; }
+  .plat.instagram { background:#4a2350; color:#f0c; }
+  .plat.youtube { background:#502020; color:#f55; }
+  .status { padding:2px 7px; border-radius:10px; font-size:11px; }
+  .status.pending { background:#333; color:#999; }
+  .status.in_progress { background:#553d00; color:#fc0; }
+  .status.done { background:#0d4b1e; color:#5f5; }
+  .status.error { background:#5b1414; color:#f77; }
+  .status.unresolved { background:#333d55; color:#9ac; }
+  a { color:#6cf; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .hop { font-size:11px; color:#999; }
+  .hop b { color:#ccc; }
+  .thumb { width:44px; height:44px; object-fit:cover; border-radius:4px; background:#222; }
+  .desc { max-width:280px; color:#bbb; }
+  .tag { font-size:11px; color:#888; }
+  .updated { color:#666; font-size:11px; white-space:nowrap; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🔗 링크 해석 모듈 — 케이스 테스트 대시보드</h1>
+  <div class="stats" id="stats"></div>
+  <div class="filters" id="filters"></div>
+</header>
+<table>
+  <thead>
+    <tr>
+      <th>플랫폼</th><th>원본</th><th>제품</th><th>기간</th><th>케이스</th><th>상태</th><th>홉 로그</th><th>최종 결과</th><th>갱신</th>
+    </tr>
+  </thead>
+  <tbody id="rows"></tbody>
+</table>
+<script>
+let currentFilter = 'all';
+let hideStageSkipped = false;
+let hideNoLink = false;
+let hideNotGonggu = false;
+let hideAffiliate = false;
+
+function isStageSkipped(r) {
+  const e = r.error || '';
+  return e.startsWith('stage=예고') || e.startsWith('stage=마감');
+}
+
+const NO_LINK_LOCATIONS = ['댓글참여_DM', '고정댓글_더보기', '링크없음_불명'];
+
+function isNoLink(r) {
+  const e = r.error || '';
+  if (e.startsWith('크롤링할 링크 없음') || e.startsWith('urls/profile_urls 없음')) return true;
+  // 애초에 시도조차 안 한(pending) 구조적으로 크롤링 불가능한 케이스도 포함
+  if (NO_LINK_LOCATIONS.includes(r.link_location)) return true;
+  if (r.comment_gated === true) return true;
+  return false;
+}
+
+function isNotGonggu(r) {
+  return r.is_gonggu === false || (r.error || '').startsWith('is_gonggu=false');
+}
+
+function isAffiliate(r) {
+  return (r.error || '').startsWith('제휴 광고성');
+}
+
+async function poll() {
+  const res = await fetch('/api/status');
+  const data = await res.json();
+  render(data);
+  setTimeout(poll, 1500);
+}
+
+function render(data) {
+  const counts = {};
+  data.forEach(r => counts[r.status] = (counts[r.status]||0) + 1);
+  document.getElementById('stats').innerHTML =
+    `<span><b>${data.length}</b> 전체</span>` +
+    Object.entries(counts).map(([k,v]) => `<span><b>${v}</b> ${k}</span>`).join('');
+
+  const filters = ['all', 'pending', 'in_progress', 'done', 'error', 'unresolved'];
+  const skippedCount = data.filter(isStageSkipped).length;
+  const noLinkCount = data.filter(isNoLink).length;
+  const notGongguCount = data.filter(isNotGonggu).length;
+  const affiliateCount = data.filter(isAffiliate).length;
+  document.getElementById('filters').innerHTML =
+    filters.map(f => `<button data-f="${f}" class="${f===currentFilter?'active':''}">${f}</button>`).join('') +
+    `<button id="toggleStageSkip" class="${hideStageSkipped?'active':''}">예고·마감 숨기기 (${skippedCount})</button>` +
+    `<button id="toggleNoLink" class="${hideNoLink?'active':''}">링크 없음 숨기기 (${noLinkCount})</button>` +
+    `<button id="toggleNotGonggu" class="${hideNotGonggu?'active':''}">공구 아님 숨기기 (${notGongguCount})</button>` +
+    `<button id="toggleAffiliate" class="${hideAffiliate?'active':''}">제휴 광고성 숨기기 (${affiliateCount})</button>`;
+  document.querySelectorAll('.filters button[data-f]').forEach(b =>
+    b.onclick = () => { currentFilter = b.dataset.f; render(data); });
+  document.getElementById('toggleStageSkip').onclick = () => { hideStageSkipped = !hideStageSkipped; render(data); };
+  document.getElementById('toggleNoLink').onclick = () => { hideNoLink = !hideNoLink; render(data); };
+  document.getElementById('toggleNotGonggu').onclick = () => { hideNotGonggu = !hideNotGonggu; render(data); };
+  document.getElementById('toggleAffiliate').onclick = () => { hideAffiliate = !hideAffiliate; render(data); };
+
+  const rows = data
+    .filter(r => currentFilter === 'all' || r.status === currentFilter)
+    .filter(r => !hideStageSkipped || !isStageSkipped(r))
+    .filter(r => !hideNoLink || !isNoLink(r))
+    .filter(r => !hideNotGonggu || !isNotGonggu(r))
+    .filter(r => !hideAffiliate || !isAffiliate(r));
+  document.getElementById('rows').innerHTML = rows.map(r => `
+    <tr>
+      <td><span class="plat ${r.platform}">${r.platform === 'instagram' ? 'IG' : 'YT'}</span></td>
+      <td><a href="${r.original_url}" target="_blank">${r.id}</a><div class="desc">${escapeHtml(r.desc_preview||'')}</div></td>
+      <td class="desc">${escapeHtml(r.product_hint||'-')}</td>
+      <td>${renderPeriod(r.period_start, r.period_end)}</td>
+      <td><div class="tag">${r.link_location||'-'}</div><div class="tag">${r.url_type||'-'}</div></td>
+      <td><span class="status ${r.status}">${r.status}</span>${r.error ? `<div class="tag" style="color:#f77">${escapeHtml(r.error)}</div>` : ''}</td>
+      <td>${(r.hops||[]).map(h => `<div class="hop"><b>${h.step}</b> ${escapeHtml((h.url||h.note||'').slice(0,60))}</div>`).join('') || '-'}</td>
+      <td>${renderFinal(r.final, r.id)}</td>
+      <td class="updated">${r.updated_at||''}</td>
+    </tr>
+  `).join('');
+}
+
+function renderPeriod(start, end) {
+  if (!start && !end) return '<span class="tag">-</span>';
+  return `<span class="tag">${start||'?'} ~ ${end||'?'}</span>`;
+}
+
+function renderFinal(final, id) {
+  if (!final || !Object.keys(final).length) return '-';
+  const parts = [];
+  if (final.image_saved) parts.push(`<img class="thumb" src="/media/${id}.jpg">`);
+  if (final.final_url) parts.push(`<a href="${final.final_url}" target="_blank">${final.final_url.slice(0,45)}</a>`);
+  if (final.price) parts.push(`<div class="tag">💰 ${final.price}</div>`);
+  if (final.name) parts.push(`<div class="tag">${escapeHtml(final.name)}</div>`);
+  return parts.join('<br>');
+}
+
+function escapeHtml(s) {
+  return (s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+poll();
+</script>
+</body>
+</html>

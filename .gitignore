@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+data/cache/
+data/samples/
+data/raw/
+.DS_Store
