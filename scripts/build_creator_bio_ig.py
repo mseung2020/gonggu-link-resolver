@@ -1,22 +1,30 @@
 #!/usr/bin/env python3
 """IG 샘플 100건의 creator_description을 채운다.
 - bio 텍스트: data/raw/user_description.csv에서 user_id로 매칭 (로컬에 이미 있음)
-- 프로필 웹사이트 링크: data/samples/ext_url_ig_recent96.json (user_id별 최신 external_url, created_at 최대값)
+- 프로필 웹사이트 링크: data/samples/{EXT_URL_FILE} (user_id별 최신 external_url, created_at 최대값)
 두 개를 합쳐 Dify 워크플로우의 creator_description 입력으로 쓴다.
 
-결과: data/samples/case_sample_ig_100_enriched.json (creator_description 갱신)
+배치별로 입력/출력/external_url 파일명이 다르면 env var로 지정:
+    IG_SAMPLE=case_sample_ig_0713_100.json EXT_URL_FILE=ext_url_ig_0713.json python3 scripts/build_creator_bio_ig.py
+
+결과: data/samples/{IG_SAMPLE 이름에 _enriched 붙인 파일} (creator_description 갱신)
 """
 import csv
 import json
+import os
 import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SAMPLES = ROOT / 'data/samples'
 RAW = ROOT / 'data/raw'
 
+IG_SAMPLE = os.environ.get('IG_SAMPLE', 'case_sample_ig_100.json')
+EXT_URL_FILE = os.environ.get('EXT_URL_FILE', 'ext_url_ig_recent96.json')
+OUT_FILE = IG_SAMPLE.replace('.json', '_enriched.json')
+
 
 def latest_external_url():
-    rows = json.load(open(SAMPLES / 'ext_url_ig_recent96.json', encoding='utf-8'))
+    rows = json.load(open(SAMPLES / EXT_URL_FILE, encoding='utf-8'))
     latest = {}
     for r in rows:
         uid = r['user_id']
@@ -35,7 +43,7 @@ def bio_text(target_ids):
     return found
 
 
-ig = json.load(open(SAMPLES / 'case_sample_ig_100.json', encoding='utf-8'))
+ig = json.load(open(SAMPLES / IG_SAMPLE, encoding='utf-8'))
 target_ids = {r['user_id'] for r in ig}
 
 ext_urls = latest_external_url()
@@ -53,6 +61,6 @@ for r in ig:
     if parts:
         filled += 1
 
-json.dump(ig, open(SAMPLES / 'case_sample_ig_100_enriched.json', 'w', encoding='utf-8'),
+json.dump(ig, open(SAMPLES / OUT_FILE, 'w', encoding='utf-8'),
           ensure_ascii=False, indent=2)
-print(f'{filled}/{len(ig)}건 creator_description 채움 (bio {len(bios)}명, external_url {len(ext_urls)}명)')
+print(f'{filled}/{len(ig)}건 creator_description 채움 (bio {len(bios)}명, external_url {len(ext_urls)}명) -> {OUT_FILE}')

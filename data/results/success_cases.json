@@ -1,5 +1,55 @@
 [
   {
+    "id": "DaeT6WtzPzv",
+    "platform": "instagram",
+    "original_url": "https://www.instagram.com/reels/DaeT6WtzPzv/",
+    "original_caption": "7월12일 (일) 최저가! 이후 할인링크 변경됩니다!\n아임반 공구는 행사 때보다도 쇼지니 마켓 가격 할인\n더 가져와요! 단 기간한정…\n\n실버칼라는 현재 품절이라 13일부투 순차출고 가능해요!!\n구매 가능! 확인하고 열었어요.. 전 실버가 제일 이뻐서..\n\n청소기 이것저것 써봤는데 흡입력 약한 경우 많았는데, \n이건 20,000Pa라 확실히 다르고요.\n\n이제 휴가철 여기저기 다닐 일 많은데.. 실내 요고\n먼지만 싹 청소해도 깔끔해지네용!!\n\n#미니청소기 #차량용청소기 #아임반루미락 #테슬라꿀템 차박용",
+    "product_hint": "아임반 루미락 미니청소기 (차량용)",
+    "period_start": "2026-07-12",
+    "period_end": "2026-07-13",
+    "link_location": "설명_프로필안내",
+    "hops": [
+      {
+        "step": "1_fetch",
+        "url": "https://link.inpock.co.kr/show_genie"
+      },
+      {
+        "step": "1_result",
+        "url": "https://link.inpock.co.kr/show_genie",
+        "note": "status=200 title=show_genie | 인포크링크"
+      },
+      {
+        "step": "1_judge",
+        "note": "링크모음 / final=False / 도착 페이지가 인포크(link.inpock.co.kr)의 중간 연결/홍보 페이지로 보임. 페이지 메타에 상품(JSON-LD 상품명/가격) 정보가"
+      },
+      {
+        "step": "1_links",
+        "note": "29개 후보 링크 (링크모음)"
+      },
+      {
+        "step": "1_pick",
+        "url": "https://link.inpock.co.kr/api/r/gcsg18ixi1U4_OWjKRUNc2N1KN48F-NiewHbm8a2BtepuFXJtFYGZ5TrtZNaldPfnjculYiRFJkjiLlaVwD0cEDwxXwmaCRtjVRCOXq-1_MK-m_K97-Tq4s2rB-PQjxsaEtWZ8VTyLr75XYeWPewggHyBPM",
+        "note": "~12(일)\n\n아임반 루미락 청소기 최저가 마켓 (conf=high)"
+      },
+      {
+        "step": "2_result",
+        "url": "https://brand.naver.com/aimban/products/13646747820?NaPm=ct%3Dmrinldtl%7Cci%3Dcopur%7Ctr%3Dcopur%7Chk%3Db3dfaf4707e217aafcc6bb2cf295f5b28a4dc07a",
+        "note": "status=200 title=아임반 루미락 차량용 청소기 무선 휴대용 진공 에어건 겸용 자동차 청소기 : 아임반"
+      },
+      {
+        "step": "2_judge",
+        "note": "상품페이지 / final=True / 브랜드(brand.naver.com)의 개별 상품 페이지로 JSON-LD에 상품명과 가격(51900)이 존재하고 og:title이 원본 포스트의"
+      }
+    ],
+    "final": {
+      "final_url": "https://brand.naver.com/aimban/products/13646747820?NaPm=ct%3Dmrinldtl%7Cci%3Dcopur%7Ctr%3Dcopur%7Chk%3Db3dfaf4707e217aafcc6bb2cf295f5b28a4dc07a",
+      "name": "아임반 루미락 차량용 청소기 무선 휴대용 진공 에어건 겸용 실내 자동차 청소기 : 아임반",
+      "price": 51900,
+      "image_saved": true
+    },
+    "resolved_at": "2026-07-13T12:19:25"
+  },
+  {
     "id": "Dagx1aTHzvC",
     "platform": "instagram",
     "original_url": "https://www.instagram.com/p/Dagx1aTHzvC/",
@@ -54,7 +104,7 @@
     "platform": "instagram",
     "original_url": "https://www.instagram.com/reels/Dagy6CaTcM9/",
     "original_caption": "(광고)(#공구)이거 그냥 '현관매트' 아니냐고요?\n근데 알고 보니... 욕실 매트!!\n\n그것도 흡착판이 102개나 박혀있는 거예요~\n아무리 밀어도 안 밀려요 (진짜 신기함)\n(바닥 재질에 따라 달라요~)\n\n물 고임 없이 배수·건조도 빨라서\n젖은 신발 물기가 잘 빠져요!\n\n장마, 비오는 날,\n젖은 신발들 신문지나, 택배박스 두고 사용하다가 바닥에 자국 남고 지저분한 그 상황들.....\n\n이제 현관에서 신발 둘 때 이용해보세요!\n\n부드러운 엠보 디자인이라\n디자인적으로도 충분히 예뻐요!!\n\n저희 집에선 이것도 해요~\n\n침대 옆에 깔아두면\n아침에 발 디딜 때 폭신해서 좋고\n아이들 놀이할 때 바닥에 깔아주면\n말랑말랑해서 넘어져도 덜 다치더라고요.\n(놀이매트 활용 😂)\n\n욕조 안, 샤워 바닥, 변기 앞, 현관\n침대 옆, 놀이 공간까지.\n\n어디든 갖다 놔도 다 잘 어울려요!\n\n어린이제품 테스트도 완료된 제품이라\n아이 있는 집이면 더 안심돼요.\n\n하나 사면 집안 여기저기서\n다 뽑아먹는 느낌이에요 🤍\n\n지금 욕실화랑 같이 공구 중이에요\n\n👇 프로필 링크에서 확인하세요\n\n#키즈매트 #현관매트 #장마철꿀팁",
-    "product_hint": "흡착판 102개 욕실 매트 (현관/키즈 매트)",
+    "product_hint": "흡착판 102개 욕실·현관 매트",
     "period_start": null,
     "period_end": null,
     "link_location": "설명_프로필안내",
@@ -104,7 +154,7 @@
     "platform": "instagram",
     "original_url": "https://www.instagram.com/reels/DabagMtzzqy/",
     "original_caption": "강후니는 자기주도성이 정말 강한 아이예요.🧡\n\n엄마가 청소를 시작하면\n어느새 옆에서 같이 청소하고,\n\n놀고 나면\n스스로 정리하는 것도 자연스럽게 익혔어요.\n\n시키는 것보다\n직접 따라 하고,\n직접 해보는 걸 좋아하는 시기라면\n정말 추천드리는 놀이템이에요.\n\n진짜 흡입되는 청소기와\n리얼한 청소도구까지 갖춰져 있어서\n놀이처럼 시작하지만\n청소 습관, 정리 습관까지 자연스럽게 이어지더라고요.\n\n무엇보다 이 퀄리티를\n2만원대로 만나볼 수 있어서\n가성비까지 만족했던 아이템이에요.\n\n📌 공구 일정\n🗓 7/6(월) 오전 10시 ~ 7/9(목)\n\n📦 배송비 3,000원\n(2개까지 합배송)\n\n👉🏻 댓글에 “청소“ 남겨주시거나, 프로필 링크에서 바로 확인가능해요🤍",
-    "product_hint": "키즈 장난감 청소기 놀이세트",
+    "product_hint": "아동용 놀이 청소기(리얼 청소도구 포함)",
     "period_start": "2026-07-06",
     "period_end": "2026-07-09",
     "link_location": "설명_프로필안내",
@@ -204,7 +254,7 @@
     "platform": "instagram",
     "original_url": "https://www.instagram.com/reel/DafqIPOBa7k/",
     "original_caption": "선크림만 바르면 피부가 뒤집어지는 분들 계신가요?🥲\n\n선크림은 꼭 발라야 하는데\n바를 때마다 좁쌀이 올라오고,\n붉어지고,\n따갑고,\n답답해서 결국 안 바르게 되는 분들이 정말 많아요.\n\n그런데 선크림을 안 바르는 것도 방법은 아니에요🥹\n\n💥여름철 자외선은 피부를 자극할 뿐 아니라\n색소침착과 광노화를 빠르게 진행시키기 때문에\n민감한 피부일수록 자외선 차단은 꼭 필요하거든요.\n\n그래서 저는 벨리닉 시카선을 추천드려요👍\n\n벨리닉 시카선은 단순히 SPF만 높은 선크림이 아니라,\n피부를 진정하고 편안하게 관리하는 \n시카 선세럼에 더 가까운 제품이에요.\n\n✔️ 고함량 병풀추출물로 \n민감해진 피부를 편안하게 진정 케어\n\n✔️ 고함량 마데카소사이드로 \n피부 컨디션을 건강하게 유지하는 데 도움\n\n✔️ 바르는 순간 느껴지는 산뜻한 쿨링감으로 \n열감이 오른 피부도 부담 없이 사용\n\n✔️ 끈적임과 답답함 없이 가볍게 흡수되는 세럼 제형\n\n✔️ 백탁 없이 자연스러운 물광 피부 표현\n\n✔️ 메이크업 위에도 밀림 없이 덧바르기 편안한 사용감\n\n✔️ 눈 시림 부담이 없어 얼굴 전체에 편안하게 사용 가능\n\n피부가 예민할수록\n매일 바르는 선크림 하나가\n피부 컨디션을 크게 좌우할 수 있어요.\n\n선크림 때문에 트러블이 반복됐다면,\n이제는 피부를 보호하는 것에서 끝나는 선크림이 아니라\n피부를 진정시키고 편안하게 관리하는 \n선케어를 선택해 보세요.\n\n저도 민감한 피부인 분들께 자신 있게 추천드리는 이유가 \n바로 이 차이입니다.\n\n현재 벨리닉 시카선 공구 진행 중이에요🧡\n\n이번 여름,\n피부를 참고 버티지 마시고\n매일 편안하게 사용할 수 있는 선세럼으로 바꿔보세요🤗\n\n#닥터페이스 #벨리닉시카선공구 #벨리닉시카선 #민감성선크림 #시카선세럼",
-    "product_hint": "벨리닉 시카선 (닥터페이스)",
+    "product_hint": "벨리닉 시카선",
     "period_start": null,
     "period_end": null,
     "link_location": "설명_프로필안내",
@@ -286,7 +336,7 @@
     "platform": "instagram",
     "original_url": "https://www.instagram.com/reels/DafJjnYhNm2/",
     "original_caption": "💛 래폴드 수납함 공구중\n\n정리는 힘들게 하는 게 아니라, 잘 담아두는 게 시작이더라고요!\n아이 옷은 계절마다 늘어나고\n주방은 식재료와 생활용품으로 금세 가득 차고…\n정리해도 며칠 지나면 다시 어질러지는 집, 저만 그런 거 아니죠?\n\n그래서 요즘 자주 사용하는 게 래폴드 수납함이에요.\n\n우리 집 공간에 맞게 필요한 사이즈만 골라\n퍼즐 맞추듯 자유롭게 배치할 수 있어서\n작은 공간도 훨씬 알차게 활용할 수 있더라고요.\n\n위로 차곡차곡 쌓아 사용하면 공간은 넓게 쓰고\n1단으로 둘 때는 우드 상판을 올려\n협탁이나 작은 선반처럼 활용할 수도 있어요.🤍\n\n팬트리에는 간식과 식재료를\n아이방에는 옷과 장난감을 정리해 두니\n필요한 물건을 한눈에 찾을 수 있어\n집안이 훨씬 깔끔해진 느낌이에요.\n\n수납이 바뀌니 집도 더 넓어 보이고\n정리하는 시간도 자연스럽게 줄어들더라고요.\n\n실용성과 깔끔한 디자인을 모두 갖춘 래폴드 수납함\n지금 로코하우스에서 만나보세요.😘\n\n🗓️ 7월6일-재고 소진시 마감\n\n💕로코하우스 프로필 링크를 확인해주세요",
-    "product_hint": "래폴드 수납함 (로코하우스 공구)",
+    "product_hint": "래폴드 수납함",
     "period_start": "2026-07-06",
     "period_end": null,
     "link_location": "설명_프로필안내",
@@ -336,7 +386,7 @@
     "platform": "instagram",
     "original_url": "https://www.instagram.com/p/DaWwzCnyQUc/",
     "original_caption": "📢 바첸 배송 안내드립니다.\n\n바첸 공구에 많은 관심 보내주셔서 진심으로 감사드립니다🤍\n\n일부 옵션의 일시적인 재고 부족으로 인해 \n아래 제품은 예약 출고로 진행됩니다.\n\n📦 예약 출고 대상\n• 헤라 그레이 → 7/8부터 순차 출고\n• 헤라 블라썸 → 7/14부터 순차 출고\n• 사각 뚜껑 → 7/20부터 순차 출고\n\n그 외 제품은 정상 발송되며,\n묶음배송 주문 건은 정상 재고 상품을 먼저 \n선출고(추가 배송비 없음) 후 예약 상품은 준비되는 대로 \n순차 발송됩니다.\n\n또한 기존 구매 고객 중 출고 지연 대상이 확인되는 경우에는 \n개별 문자 안내도 함께 진행될 예정입니다.\n\n배송을 기다려주시는 분들께 불편을 드리게 되어 죄송합니다.\n구매 및 배송 일정에 참고 부탁드리며, 너른 양해 부탁드립니다.",
-    "product_hint": "바첸 프라이팬",
+    "product_hint": "바첸 프라이팬 (헤라 그레이·헤라 블라썸·사각 뚜껑 등)",
     "period_start": "2026-07-08",
     "period_end": "2026-07-20",
     "link_location": "설명_프로필안내",
@@ -386,7 +436,7 @@
     "platform": "instagram",
     "original_url": "https://www.instagram.com/reels/DabqUGhTNRw/",
     "original_caption": "☀️ 여름 외출 필수 조합 OPEN ❄️\n이거 진짜 하고 안하고 차이가 엄청나요.\n\n처음엔 저도“넥쿨러까지 해야 하나?”\n“팔토시가 꼭 필요할까?”싶었는데\n막상 써보니까 왜 여름마다 다들 찾는지 알겠더라구요👀\n\n🏃🏻 아이들은 날씨 더워도 계속 뛰어놀고\n👩🏻 엄마는 계속 따라다니고\n☀️ 햇빛은 점점 더 강해지고…\n놀이터 / 캠핑 / 숲체험 / 체험학습 / 소풍 / 바다 🌊\n야외활동 많은 집은\n이 두 가지 없으면 진짜 힘들어요🥵\n\n❄️ 넥쿨러 7,900원~☀️ 팔토시 4,900원~\n💛 넥쿨러는 1+1 구매 시 개당 6,900원부터 가능!\n\n❄️ 모어하우스 넥쿨러 (7,900원~)\n✔ 18도 이하에서 얼게 되는 PCM 신소재\n🧊 얼음물 10분 / 냉동실 20분이면 냉각 완료\n✨ 결로 현상 없이 쾌적하게\n♻️ 반영구 사용 가능\n✅ KC 인증 완료\n📦 누적 판매량 10만세트 이상\n목만 시원해도 체감온도가 확 달라져요.\n손선풍기 계속 들고 다닐 필요 없이\n툭 걸어주기만 하면 끝👌\n특히 활동 많은 아이들도 편하게 착용 가능해요.\n\n☀️ 에끌 쿨토시 (4,900원)\n⭐ 누적 판매량 10만세트 이상⭐ 평점 4.9\n🛡 UV 99.9% 차단🛡 UPF50+\n🇰🇷 국내 기능성 원단\n💧 흡한속건 기능🌿 항균 · 소취 기능\n🧊 부드럽고 시원한 촉감\n선크림 계속 덧바르기 힘든 팔,\n이건 그냥 쓱 껴주면 끝.\n☀️ 햇빛 차단🤍 팔 타는 거 방지\n🦟 벌레 물림 예방 도움\n\n이번엔 귀여운 디즈니 정품 아이템도 준비했어요🐭🤍\n☕ 커피 한 잔 값으로\n올 여름 진짜 잘 쓰게 될 필수템.\n미리 준비해두세요 :)\n\n📅공구일정 : 7월 6일~ 7월 9일\n🚚배송일정 :평일기준 1-4일 이내 출고(주문 폭주 시 1-2일 추가 소요)\n\n❤️구매 및 상품문의는 댓글또는 디엠 부탁드려요\n♥️프로필 하단링크 클릭 바로 구매가능하세요 \n💌댓글로 \"링크\" 적으면 구매링크 디엠 전송 \nㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ \n🎁구매완료 이벤트 \n1️⃣구매 완료 후 댓글로 인증(구매완료 이름)\n예) 구매완료 김희정 \n2️⃣공구 마감 추첨하여 네이버 포인트 5천원 보내드릴께요 \n(팔로워 분들만 이벤트 신청 가능해요)\nㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ",
-    "product_hint": "모어하우스 넥쿨러, 에끌 쿨토시(팔토시)",
+    "product_hint": "모어하우스 넥쿨러, 에끌 쿨토시 (디즈니 정품 포함)",
     "period_start": "2026-07-06",
     "period_end": "2026-07-09",
     "link_location": "설명_프로필안내",
@@ -486,7 +536,7 @@
     "platform": "instagram",
     "original_url": "https://www.instagram.com/p/DabncRCjyiE/",
     "original_caption": "#공구오픈 #선착순이벤트 6월 도정한\n제주 햇메밀 100%로 만든 제주100%메밀면 오픈\n\n🎁선착순 이벤트 5명 납작면 1개 추가증정\n🎁구매인증 이벤트 5명 얇은면 소바세트 1개 발송\n→ 구매완료+핸드폰뒤4자리 남겨주세요^^\n\n✅제주산 100% 메밀사용\n혼합면이 아니고요. 제주에서 자란 100%\n국산 메밀만 사용해 메밀 특유의 구수한 풍미와\n생면의 쩔깃함도 맛보실 수 있어요\n\n✅면만 따로 주문 가능!\n면만 필요한 분들도 많으시죠?\n원하는 요리에 활용할 수 있도록 생메밀면만\n단독 구매도 가능합니다.\n\n✅소바세트 구성\n제주메밀순면 150gx2봉(2인분기준)\n메밀장국2봉+ 갈은무2봉+와사비2봉 +김가루2봉\n\n✅기본면, 넓적면 선택가능\n다른 메밀면에서는 보기 힘든 넓적 메밀면까지 준비했어요.\n•일반면 : 소바, 냉메밀, 비빔면\n• 넓적면 : 기본 메밀면 요리는 물론\n샐러드, 파스타, 칼국수 등 색다르게 즐기기 좋아요\n\n✅50년 전통 여수 제면소에서 만든 생면\n맷돌로 메밀을 빻아 바로 반죽하고 뽑아내는 전통 \n방식이라 신선한 메밀향을 그대로 담았습니다.\n\n✅밀가루 0%, 글루텐 프리\n순메밀만 사용해 밀가루 없이 깔끔하게.\n식단 관리 중이거나 속 편한 한 끼를 찾는\n분들께도 잘 어울려요.\n\n✅150g씩 1인분 개별 포장\n500g 대용량처럼 남은 면 보관 걱정 없이,\n한 번에 딱 1인분만 꺼내 삶으면 끝!\n\n✅유통기한: 냉동 보관 기준 제조일로부터 18개월\n→ 보관방법: 수령 후 반드시 냉동 보관해 주세요.\n→ 냉장 보관: 최대 7일간 보관 가능하나,\n면의 식감이 저하되어 흐물해질 수 있으므로\n권장하지 않아요~ \n→ 장국,무,와사비,김가루는 각각 소비기한이\n달르니 참고해 주세요\n→ 갈은 무: 100% 무만 사용하여 만든 제품으로\n신선한 품질 유지를 위해 냉동 보관해 주세요.\n\n✅맛있게 드시는 방법\n면은 드시기 전까지 냉동 보관하시고\n필요할 때 해동하여 조리해 드시는 것을 추천해요\n받으시고 바로 또는 내일 드신다면 냉장보관도\n괜찮으세요~\n\n⭕️구매는 @1053yony.table 프로필 링크",
-    "product_hint": "제주 100% 생메밀면 (제주메밀순면 소바세트)",
+    "product_hint": "제주100%메밀면 소바세트",
     "period_start": null,
     "period_end": null,
     "link_location": "설명_프로필안내",
@@ -586,7 +636,7 @@
     "platform": "instagram",
     "original_url": "https://www.instagram.com/reels/DaR5qZivamY/",
     "original_caption": "정상가격으로 쿠팡에서 주문해서 드셔보시고 \n공구 기다리신 댔는데 결국 못 기다리시고\n추가주문해서 드시고 계시다는 후기🖤\n\n저희처럼 건강하고자 하는 가족들!! \n우유보다 더 건강하고 두뇌에도 좋으니 꼭 씹두로 드셔보세요.\n\n탈모인들에게도 좋다는 서리태 ㅎ \n다이어트효과 보고 싶으신분도 놓치지 마세요.\n\n이번 앵콜공구는 더 저렴해요!! \n\n가끔 쿠팡에서 소비자기한 임박제품 판매하는데\n현재 임박제품보다 저렴하지만\n저희 제품이 소비자기한은 임박제품 아닙니다.\n\n”공구가“ 의미는\n세상에서 제일 저렴해야하는 거 잖아요.\n첫공구때 많은 사랑을 주셔서 앵콜공구!! \n소비자기한이 더 긴데도 쿠팡가보다 싸게 공구 진행하니\n꼭 쟁여두세요. 4박스 솔직히 순삭입니다 ㅎㅎ \n\n@lso_mom 프로필링크에서 지금 구매하세요.",
-    "product_hint": "씹두 (서리태 건강간식)",
+    "product_hint": "씹두(서리태 건강식품)",
     "period_start": null,
     "period_end": null,
     "link_location": "설명_프로필안내",
@@ -636,7 +686,7 @@
     "platform": "instagram",
     "original_url": "https://www.instagram.com/reels/DaSv4OsJxYO/",
     "original_caption": "🔥 여름마다 품절되는 조합, 드디어 공구 OPEN!\n\n기본 반팔 하나, 반바지 하나면 여름 코디는 끝입니다.\n\n매년 가장 많이 찾는 파타고니아 P-6 포켓 반팔티 + 배기스 7인치 반바지를 한 번에 준비했어요.\n\n✔️ 파타고니아 대표 베스트셀러 조합\n✔️ 남녀 모두 잘 어울리는 클래식 디자인\n✔️ 여행 · 캠핑 · 휴가 · 데일리룩까지 활용도 최고\n✔️ 유행 없이 매년 꺼내 입는 여름 필수템\n\n더운 날엔 복잡한 코디보다\n이 조합 하나면 충분합니다.\n\n🤍 P-6 포켓 반팔티\n가볍고 깔끔한 시그니처 로고 디자인\n\n🩳 배기스 7인치 반바지\n가볍고 편안한 착용감으로 여름 내내 손이 가는 아이템\n\n올여름 가장 많이 입게 될 조합,\n지금 공구 특가로 만나보세요.\n\n👉 @beautilife_shop 프로필 링크\n👉 문의는 DM으로 도와드립니다 📨",
-    "product_hint": "파타고니아 P-6 포켓 반팔티 & 배기스 7인치 반바지",
+    "product_hint": "파타고니아 P-6 포켓 반팔티 + 배기스 7인치 반바지",
     "period_start": null,
     "period_end": null,
     "link_location": "설명_프로필안내",
@@ -718,7 +768,7 @@
     "platform": "youtube",
     "original_url": "https://www.youtube.com/watch?v=R7qAZWz3PBA",
     "original_caption": "국물 / 짜장 / 마라 3가지 떡볶이 5개가 19,900원! 공동구매 가격 구입 링크\nhttps://m.site.naver.com/1XLn0 \n-----------------------------------\nhttps://hardhit.ai/\n세이버 다운 세이버 매트릭스 하드힛\n-----------------------------------\n놀고싶다 채널의 골든글러브 회원이 되어주세요!\n놀고싶다와 멤버십 회원이 소통 할 수 있는 오픈 채팅방에서\n소통할 수 있는 기회를 드립니다.\n   / @놀고싶다  ",
-    "product_hint": "국물/짜장/마라 3종 떡볶이 5개 (공동구매)",
+    "product_hint": "국물/짜장/마라 3종 떡볶이 5개 세트",
     "period_start": null,
     "period_end": null,
     "link_location": "설명_직접링크",
@@ -778,11 +828,161 @@
     "resolved_at": "2026-07-09T15:18:56"
   },
   {
+    "id": "PkYAP_p4Dq0",
+    "platform": "youtube",
+    "original_url": "https://www.youtube.com/watch?v=PkYAP_p4Dq0",
+    "original_caption": "🎁 완도 전복\n🔸 키로 당 7~8미\n1kg : 32,000원\n2kg : 57,000원\n\n🔸 키로 당 11~12미\n1kg : 30,000원\n2kg : 55,000원\n\n🚚 무료배송\n\n\n🎁 접시 후라이팬, 궁중팬 3종세트\n☆ 총 6종 가격 : 98,000원\n24센티 궁중팬\n24센티 후라이팬\n24센티 유리뚜껑\n20센티 후라이팬\n실리콘 매트\n실리콘 손잡이(2개)\n\n🚚  무료배송\n\n\n✔ \"후다닥 공구몰\"에서 주문\n https://https://www.hoodadakshop.kr\n\n☎ 피디 전화번호 : 010-4207-1235\n\n\n🟣 \"후다닥 공구TV\" 구독하기 \n   / @hoodadaktv  \n\n➰ 후다닥요리 \"밴드\" 가입하기\n https://band.us/@hoodadakcook\n\n#후다닥공구TV",
+    "product_hint": "완도 전복",
+    "period_start": null,
+    "period_end": null,
+    "link_location": "설명_직접링크",
+    "hops": [
+      {
+        "step": "1_fetch",
+        "url": "https://www.hoodadakshop.kr"
+      },
+      {
+        "step": "1_result",
+        "url": "https://www.hoodadakshop.kr/",
+        "note": "status=200 title=후다닥 공구몰"
+      },
+      {
+        "step": "1_judge",
+        "note": "스토어메인 / final=False / 페이지 제목과 도메인 모두 쇼핑몰 메인(후다닥 공구몰)을 가리키며, 페이지에 특정 상품의 이름·가격·구체적 이미지(제품별 메타데이터) 또는 JS"
+      },
+      {
+        "step": "1_links",
+        "note": "80개 후보 링크 (스토어메인)"
+      },
+      {
+        "step": "1_pick",
+        "url": "https://www.hoodadakshop.kr/deals/?idx=353",
+        "note": "완도 활전복\t\t\t\t\t\t\t\t\t\t\t\t\t\n                               (conf=high)"
+      },
+      {
+        "step": "2_result",
+        "url": "https://www.hoodadakshop.kr/deals/?idx=353",
+        "note": "status=200 title=완도 활전복 : 후다닥 공구몰"
+      },
+      {
+        "step": "2_judge",
+        "note": "상품페이지 / final=True / 원본 포스트의 '완도 전복' 홍보 내용과 일치함. 도메인(hoodadakshop.kr)이 포스트에 명시된 구매처 '후다닥 공구몰'과 동일하고, "
+      }
+    ],
+    "final": {
+      "final_url": "https://www.hoodadakshop.kr/deals/?idx=353",
+      "name": "완도 활전복",
+      "price": 32000,
+      "image_saved": true
+    },
+    "resolved_at": "2026-07-13T11:01:33"
+  },
+  {
+    "id": "yyTwCm6oTjU",
+    "platform": "youtube",
+    "original_url": "https://www.youtube.com/watch?v=yyTwCm6oTjU",
+    "original_caption": "🎁 표고버섯 주문 안내\n생산지 : 전남 장흥\n1키로 : 16,500원\n2키로 : 32,000원\n3키로 : 45,000원\n☆ 무료배송\n\n✔ \"후다닥 공구몰\"에서 주문\n https://https://www.hoodadakshop.kr\n☎ 피디 전화번호 : 010-4207-1235\n\n\n\n🟣 \"후다닥 공구TV\" 구독하기 \n   / @hoodadaktv  \n\n➰ 후다닥요리 \"밴드\" 가입하기\n https://band.us/@hoodadakcook\n\n#후다닥공구TV",
+    "product_hint": "전남 장흥 표고버섯",
+    "period_start": null,
+    "period_end": null,
+    "link_location": "설명_직접링크",
+    "hops": [
+      {
+        "step": "1_fetch",
+        "url": "https://www.hoodadakshop.kr"
+      },
+      {
+        "step": "1_result",
+        "url": "https://www.hoodadakshop.kr/",
+        "note": "status=200 title=후다닥 공구몰"
+      },
+      {
+        "step": "1_judge",
+        "note": "스토어메인 / final=False / 도메인은 원본 포스트가 언급한 '후다닥 공구몰'의 홈(루트)과 일치하나, 페이지에 특정 상품명·가격·JSON-LD 상품 정보가 없고 제품 상세 "
+      },
+      {
+        "step": "1_links",
+        "note": "80개 후보 링크 (스토어메인)"
+      },
+      {
+        "step": "1_pick",
+        "url": "https://www.hoodadakshop.kr/deals/?idx=354",
+        "note": "표고버섯\t\t\t\t\t\t\t\t\t\t\t\t\t\n                                 (conf=high)"
+      },
+      {
+        "step": "2_result",
+        "url": "https://www.hoodadakshop.kr/deals/?idx=354",
+        "note": "status=200 title=표고버섯 : 후다닥 공구몰"
+      },
+      {
+        "step": "2_judge",
+        "note": "상품페이지 / final=True / 페이지의 JSON-LD 상품명 '표고버섯'과 가격 16,500원이 원본 포스트의 1kg 가격(16,500원)과 일치하고, 페이지 제목/도메인(h"
+      }
+    ],
+    "final": {
+      "final_url": "https://www.hoodadakshop.kr/deals/?idx=354",
+      "name": "표고버섯",
+      "price": 16500,
+      "image_saved": true
+    },
+    "resolved_at": "2026-07-13T11:03:01"
+  },
+  {
+    "id": "HVMXTqwFmng",
+    "platform": "youtube",
+    "original_url": "https://www.youtube.com/watch?v=HVMXTqwFmng",
+    "original_caption": "멜비유 기초 공구합니다.\n버블토너와 세럼\n수분크림에 탄력크림까지\n아침부터 저녁까지\n촉촉하고 광나는 피부를 책임질\n요즘 유행템 버블토너 꼭 사용해 보세요.\n\n공구링크^^\nhttps://www.mellbeu.com/shop_view?idx...",
+    "product_hint": "멜비유 버블토너",
+    "period_start": null,
+    "period_end": null,
+    "link_location": "설명_직접링크",
+    "hops": [
+      {
+        "step": "1_fetch",
+        "url": "https://www.mellbeu.com/shop_view?idx..."
+      },
+      {
+        "step": "1_result",
+        "url": "https://www.mellbeu.com/",
+        "note": "status=200 title=멜비유 Ι MELLBEU"
+      },
+      {
+        "step": "1_judge",
+        "note": "스토어메인 / final=False / 도착 페이지는 사이트 루트(멜비유 브랜드/스토어 메인)로 특정 상품의 상세 정보(제품명·가격·JSON-LD 상품 데이터)가 없음. 원본 포스트가"
+      },
+      {
+        "step": "1_links",
+        "note": "58개 후보 링크 (스토어메인)"
+      },
+      {
+        "step": "1_pick",
+        "url": "https://www.mellbeu.com/101/?idx=8",
+        "note": "팝 토너ㅣPOP TONERㅣ버블토너\t\t\t\t\t\t\t\t\t\t\t\t\t\n                  (conf=high)"
+      },
+      {
+        "step": "2_result",
+        "url": "https://www.mellbeu.com/101/?idx=8",
+        "note": "status=200 title=MELLBEUㅣ멜비유ㅣ팝 토너ㅣPOP TONERㅣ버블토너 버블팩 버블스킨 수분 토너"
+      },
+      {
+        "step": "2_judge",
+        "note": "상품페이지 / final=True / 원본 포스트의 '멜비유 버블토너'와 도착 페이지의 JSON-LD 상품명('팝 토너ㅣPOP TONERㅣ버블토너')이 동일하며 동일 도메인(www."
+      }
+    ],
+    "final": {
+      "final_url": "https://www.mellbeu.com/101/?idx=8",
+      "name": "팝 토너ㅣPOP TONERㅣ버블토너",
+      "price": 41100,
+      "image_saved": true
+    },
+    "resolved_at": "2026-07-13T11:03:45"
+  },
+  {
     "id": "SOBUJiG6hPE",
     "platform": "youtube",
     "original_url": "https://www.youtube.com/watch?v=SOBUJiG6hPE",
     "original_caption": "국물 / 짜장 / 마라 3가지 떡볶이 5개가 19,900원! 공동구매 가격 구입 링크\nhttps://m.site.naver.com/1XLn0 \n-----------------------------------\n놀고싶다 채널의 골든글러브 회원이 되어주세요!\n놀고싶다와 멤버십 회원이 소통 할 수 있는 오픈 채팅방에서\n소통할 수 있는 기회를 드립니다.\n   / @놀고싶다  ",
-    "product_hint": "국물·짜장·마라 떡볶이 5개",
+    "product_hint": "국물/짜장/마라 3종 떡볶이 5개",
     "period_start": null,
     "period_end": null,
     "link_location": "설명_직접링크",
@@ -808,5 +1008,369 @@
       "image_saved": true
     },
     "resolved_at": "2026-07-09T15:34:01"
+  },
+  {
+    "id": "Dar94mXCW6w",
+    "platform": "instagram",
+    "original_url": "https://www.instagram.com/p/Dar94mXCW6w/",
+    "original_caption": "창의력 폭발! 목욕놀이 시리즈 4종 𝗼𝗽𝗲𝗻‼️😎\n\n우리집 애들 반응 보고 데려온 목욕놀이템 5차💜\n☁️ 구름놀이 하고 \n🌈 색 섞어보고 \n😍  피규어 찾느라 바빠요ㅎㅎ\n\n애들은 재밌어서 좋아하고 \n저는 순한 성분이라 마음 놓이더라고요\n피부 자극 테스트 0.00에 잔류염소 제거까지!!✨\n특별한 놀이 찾고계신다면 진짜 추천하고 싶어요🛁\n\n✅ [제품 설명]\n☁️ 구름목욕시간 입욕제\n10개월 주원이는 거품을 만지고 뭉치고 흩뜨리면서 한참 놀면서\n손으로 만지고 느끼는 과정 자체가 오감 자극이 되고, \n다양한 모양을 만들면서 상상력까지 자연스럽게 자극되요 \n\n🌈 색깔목욕시간\n개인적으로 제가 제일 만족했던 제품!!💛\n재구매도 그만큼 높은 아이템이에요 ㅎㅎ\n\"빨강이랑 노랑 섞으면 무슨 색이 될까?\" 하면서 \n직접 예측하고 궁금해하고 확인하는 과정이 반복되니까 \n40개월 연호한테는 관찰력과 호기심을 자극해주더라고요\n놀면서 배우는 놀이 같아서 더 좋았어요🌈\n\n💜 핑퐁팡 랜덤 피규어 바스볼\n이건 진짜 집중력,상상력 버튼!!!🤣\n피규어가 언제 나올지 기다리면서 \n바스볼이 녹는 과정을 끝까지 지켜보더라고요ㅎㅎ\n기다리고, 예상하고, 발견하는 과정 자체가 \n아이 호기심을 자극해줘서 단순한 입욕제 이상의 재미가 있더라구요!💜\n\n💦 물을 부으면 폭발하는 폭탄목욕시간 \n(30g X 5가지색)\n과학시간? 놀이시간?\n아이들의 상상력을 자극하는 \n오감 발달 색깔놀이 목욕시간! 🌈✨\n\n🧼 바디워시 필요 없는 거품 입욕제!\n♻️ 일회용? NO! \n구름 목욕시간, 색깔 목욕시간 리필로 무한 반복 놀이 OK!\n\n✅진행 옵션\nA : 목욕놀이 맛보기 세트\n(구름, 색깔, 핑퐁팡, 폭탄)\n\nB : 색깔목욕시간 1+1\n\nC : 구름목욕시간 1+1+1\n\nD : 폭탄목욕시간 세트 + 단품 2개\n\nE : 핑퐁팡 12간지 세트 + 단품 1개\n\n무엇보다 이 제품들은 무조건.. 장담하는데\n공구가격 보면 온라인에서 절대 못사요ㅠㅠ\n무조건 공구기간에 구매하시는거 강력추천‼️👍🏻👍🏻\n\n일단 절대 실패없고 재구매 높은 입욕제라\n특가 3일 열렸을때 챙겨가세요~!\n\n🗓 공구 일정\n~7/14 (오후 5시 마감)\n(단 3일간/ 품절시 조기종료)\n\n✅출고 기간\n7월 29일 일괄출고\n\n✅유통기한\n모두 최근 1~4개월 이내의 생산품으로\n(유통기한 20개월 내외)\n\n✅ 가격\n세트당 19,800원 동일\n배송비 별도\n\n@1201w__love 프로필링크에서 확인 가능해요\n\n#목욕놀이 #유아목욕 #입욕제추천",
+    "product_hint": "목욕놀이 시리즈(구름목욕시간, 색깔목욕시간, 핑퐁팡, 폭탄목욕시간)",
+    "period_start": null,
+    "period_end": "2026-07-14",
+    "link_location": "설명_프로필안내",
+    "hops": [
+      {
+        "step": "1_fetch",
+        "url": "https://inpk.link/yeonorang"
+      },
+      {
+        "step": "1_result",
+        "url": "https://inpk.link/yeonorang",
+        "note": "status=200 title=yeonorang | 인포크링크"
+      },
+      {
+        "step": "1_judge",
+        "note": "링크모음 / final=False / 도메인(inpk.link)과 제목('yeonorang | 인포크링크')이 링크모음/인포크(링크인바이오) 형태의 랜딩을 나타냄. JSON-LD에 "
+      },
+      {
+        "step": "1_links",
+        "note": "21개 후보 링크 (링크모음)"
+      },
+      {
+        "step": "1_pick",
+        "url": "https://inpk.link/api/r/Jyws4Ytp8PQGZFLd5LjKH16QwQTT0hAU1o9wQiPspPjH45h_O6UnhMtIBjCRERlMaKKKu3jmQJds-ek3_XJisY-Qc_xCrzcL5htk_MWq8-89ixerTv9Cecxq",
+        "note": "색깔&구름목욕시간 5차🌈 (conf=high)"
+      },
+      {
+        "step": "2_result",
+        "url": "https://codussl.shop.blogpay.co.kr/view/good/d3QYC",
+        "note": "status=200 title=구름목욕시간외 4종 공구"
+      },
+      {
+        "step": "2_judge",
+        "note": "상품페이지 / final=True / URL 패턴(/view/good/)과 호스트가 판매/결제 관련 서브도메인이고 og:title이 '구름목욕시간외 4종 공구'로 원본 포스트에서 홍"
+      }
+    ],
+    "final": {
+      "final_url": "https://codussl.shop.blogpay.co.kr/view/good/d3QYC",
+      "name": "구름목욕시간 외 4종 (목욕놀이 시리즈, 공구)",
+      "price": null,
+      "image_saved": true
+    },
+    "resolved_at": "2026-07-13T12:34:56"
+  },
+  {
+    "id": "DarKj_cSYkJ",
+    "platform": "instagram",
+    "original_url": "https://www.instagram.com/reels/DarKj_cSYkJ/",
+    "original_caption": "관리하기 어려운 패브릭 쇼파🛋\n비싸서 자주 바꿔줄 수도 없잖아요🥲\n\n그럴땐 생활오염 방지용으로 \n쇼파패드 하나만 깔아줘도 관리하기 좋아요!\n\n특히 저는 예쁜 천쇼파 오랫동안 써오면서\n한번 세탁하려하면 커버 벗기고 또 다시 씌우고\n두팔 다 나가는 느낌이여서 진짜 잘 알아요\n\n쇼파패드 깔아주고 쓱 패드만 빼서 세탁기 돌리면\n쇼파 관리가 확 편해져요 정말요!! \n\n그리고 여름에는 시원하게 사용하도록\n100% 듀리론 냉감소재로 제작했답니다🧊🥹\n\n7월 19일 일요일까지 오픈기념으로\n공구특가로 만나보세요✨",
+    "product_hint": "듀리론 냉감 쇼파패드 (프렌치럭셔리)",
+    "period_start": null,
+    "period_end": "2026-07-19",
+    "link_location": "설명_프로필안내",
+    "hops": [
+      {
+        "step": "1_fetch",
+        "url": "https://link.inpock.co.kr/frenchluxury_official"
+      },
+      {
+        "step": "1_result",
+        "url": "https://link.inpock.co.kr/frenchluxury_official",
+        "note": "status=200 title=frenchluxury_official | 인포크링크"
+      },
+      {
+        "step": "1_judge",
+        "note": "링크모음 / final=False / 도메인(link.inpock.co.kr)과 페이지 제목이 인포크의 링크·랜딩 서비스 형태로 보이며, JSON-LD 상품명·가격 정보가 없음. 상"
+      },
+      {
+        "step": "1_links",
+        "note": "27개 후보 링크 (링크모음)"
+      },
+      {
+        "step": "1_pick",
+        "url": "https://link.inpock.co.kr/api/r/wdOQiM-MxUM4TcphtQuYnsGp_3Jiewzc8C8-hcqum4V1eGBijS2CmGKRogg-SnV02I9Jae75538pIzpz7IRaJrfBVPUspnWk8qlQYuLlXzGzlVIEkuSisQ4SRUqWFUcXxsFy46ea7Cdh2Y9hKZU5GcAOpx6v3RuvRxIdFhek5uxhQX-qktZwNClVhN-a8gtwHS4bMPmOIHExzWipTxX6DJhukYCmzfukckn_K5EcIlY6GkNO",
+        "note": "프랑스 Glacé 글라쎄 3중직 냉감 쇼파패드 - 정품 듀라론100%\n\n🖤특가오픈 ₩49, (conf=high)"
+      },
+      {
+        "step": "2_result",
+        "url": "https://frenchluxury.kr/products/2zum8mccjxcp?page=1",
+        "note": "status=200 title=프랑스 Glacé 글라쎄 3중직 냉감 쇼파패드 - 정품 듀라론100%"
+      },
+      {
+        "step": "2_judge",
+        "note": "상품페이지 / final=True / 페이지가 /products/ 경로의 개별 상품 URL이고 og:title에 '냉감 쇼파패드'와 '듀라론100%'가 명시되어 있어 원본 포스트의 "
+      }
+    ],
+    "final": {
+      "final_url": "https://frenchluxury.kr/products/2zum8mccjxcp?page=1",
+      "name": "프랑스 Glacé 글라쎄 3중직 냉감 쇼파패드 (듀라론100%)",
+      "price": null,
+      "image_saved": true
+    },
+    "resolved_at": "2026-07-13T13:35:39"
+  },
+  {
+    "id": "DacCLpNAQII",
+    "platform": "instagram",
+    "original_url": "https://www.instagram.com/p/DacCLpNAQII/",
+    "original_caption": "애플키티 말랑 EVA 방수백 OPEN\n\n​키티 좋아하는 아이들이라면 무조건 반할\n사랑스러운 핑크 컬러와 귀여운 키티 패턴이 가득 담긴\nEVA 방수백 소개드려요!\n\n가볍고 탄탄한 EVA 소재로 제작되어\n물놀이, 수영장, 여행, 데일리가방으로 활용하기 좋아요.\n\n오염이 묻어도 물티슈로 쓱- 닦아주면 끝!\n생활방수 가능한 소재라 관리도 정말 편하답니다\n\n넉넉한 수납력으로 아이들 간식, 장난감, 수영용품,\n여벌옷까지 쏙쏙 들어가요.\n엄마들은 피크닉백, 장바구니,\n여행 보조가방으로 사용해도 너무 예쁜 디자인이에요 ✨\n\n✔ 가볍고 튼튼한 EVA 소재\n✔ 생활방수 가능\n✔ 물놀이, 수영장, 여행 필수템\n✔ 오염 걱정 없이 간편한 관리\n✔ 귀여운 키티 패턴으로 포인트 톡톡\n\n사이즈\n▪ 소 : 28 × 21 × 11cm\n▪ 중 : 36 × 30 × 13cm\n▪ 대 : 46 × 32 × 23cm\n+ 특대사이즈 추가예정 +\n\n공구기간 -여름상시진행!\n\n배송기간\n주문일이후 평균 배송기간 2주\n(빠른입고중이라 빠르게출고해드려용)\n부피때문에 합배불가입니다\n⠀⠀⠀⠀⠀⠀⠀\n✔️구매문의는 프로필상단 링크 또는 DM 주세요 🖤🩷\n⠀⠀⠀⠀⠀⠀⠀",
+    "product_hint": "애플키티 말랑 EVA 방수백",
+    "period_start": null,
+    "period_end": null,
+    "link_location": "설명_프로필안내",
+    "hops": [
+      {
+        "step": "1_fetch",
+        "url": "https://link.inpock.co.kr/daily_on.mood"
+      },
+      {
+        "step": "1_result",
+        "url": "https://link.inpock.co.kr/daily_on.mood",
+        "note": "status=200 title=daily_on.mood | 인포크링크"
+      },
+      {
+        "step": "1_judge",
+        "note": "링크모음 / final=False / 도메인(link.inpock.co.kr)과 제목('daily_on.mood | 인포크링크')이 링크-인-바이/프로필형 링크모음 서비스로 보이며,"
+      },
+      {
+        "step": "1_links",
+        "note": "6개 후보 링크 (링크모음)"
+      },
+      {
+        "step": "1_pick",
+        "url": "https://link.inpock.co.kr/api/r/zwSTx9Fc5zCypCWFhYpSblqZEyw1lwtQDHVhUzZmVbfPm94gWFXRD473MPGc2ZgxltJlMpjEthqpfY2FoHyHdETz_fVJmHprgMSLvVNEfUlDR_Hdy2EvZW7eWjeCDZWFycP_anKE1irS4PIUhxu6JsoAycuCgyFuOU4",
+        "note": "애플키티 말랑 비치가방 방수백 (conf=high)"
+      },
+      {
+        "step": "2_result",
+        "url": "https://lapang.shop.blogpay.co.kr/picxell/good/cOMB5/4bcE/03",
+        "note": "status=200 title=비치가방! 애플키티 말랑 EVA 방수백 (소,중,대)"
+      },
+      {
+        "step": "2_judge",
+        "note": "상품페이지 / final=True / 페이지 제목(og:title)에 원본 포스트의 상품명과 사이즈(소, 중, 대)가 명시되어 있어 포스트가 홍보하는 동일 상품으로 판단됨. og:i"
+      }
+    ],
+    "final": {
+      "final_url": "https://lapang.shop.blogpay.co.kr/picxell/good/cOMB5/4bcE/03",
+      "name": "애플키티 말랑 EVA 방수백",
+      "price": null,
+      "image_saved": true
+    },
+    "resolved_at": "2026-07-13T13:36:06"
+  },
+  {
+    "id": "DapSY6BE1wk",
+    "platform": "instagram",
+    "original_url": "https://www.instagram.com/p/DapSY6BE1wk/",
+    "original_caption": "깔끔하면서 고급스러운👍까르투하 커트러리\n\n요즘 집에서 브런치 먹거나 디저트 먹을 때\n까르투하 커트러리를 꺼내 쓰는데\n과하지 않으면서도 은근히 고급스러운 느낌 덕분에\n괜히 기분이 좋아져서 사진을 한 장씩 더 찍게 돼요\n\n가벼운 그립감에 매일 써도 질리지 않는 스타일이라\n데일리 식사용으로 진짜 만족스럽더라고요\n\n4종 세트에 가격이 1만 원대라는 게\n믿기지 않을 정도로 실물 퀄리티가 좋아서\n주변에 신혼 식기나\n집들이 선물용으로 추천해 드리기에도\n아주 완벽해요\n\n식탁 분위기를 소소하지만 확실하게\n기분 전환하고 싶으셨다면\n이번 기회에 꼭 들여보세요\n매일 마주하는 식사 시간을\n더 즐겁고 근사하게 바꿔보고 싶으시다면\n홈앤홈 특가공구 놓치지 마세요😎\n\n🕒공구기간 7월10일-7월15일(단 6일간)\n\n💠홈앤홈 프로필 링크를 확인해주세요",
+    "product_hint": "까르투하 커트러리 (4종 세트, 홈앤홈 특가공구)",
+    "period_start": "2026-07-10",
+    "period_end": "2026-07-15",
+    "link_location": "설명_프로필안내",
+    "hops": [
+      {
+        "step": "1_fetch",
+        "url": "https://link.inpock.co.kr/homenhome"
+      },
+      {
+        "step": "1_result",
+        "url": "https://link.inpock.co.kr/homenhome",
+        "note": "status=200 title=homenhome | 인포크링크"
+      },
+      {
+        "step": "1_judge",
+        "note": "링크모음 / final=False / 도메인(link.inpock.co.kr)과 페이지 제목(homenhome | 인포크링크)이 인포크 링크형 랜딩/프로필 페이지를 가리키며, 상품 "
+      },
+      {
+        "step": "1_links",
+        "note": "22개 후보 링크 (링크모음)"
+      },
+      {
+        "step": "1_pick",
+        "url": "https://link.inpock.co.kr/api/r/vYy42LptdMFllTAvZN9OaQOTN0P_DQ_AWjIO-yWmqbp-ATORmM5U3Aj_X3n58YSV1ZGwVl_ah--3rLzFAnlkMIRNjAFjQ47aY9aYDDdHZHpbDb-kIe5xxdJt61vM1qpl-ayn7VWM-pmh_c46HP3JhpkcrciLIlnwmMN_Y82c2iCqaVeMmzHp_pl-Hp84BYg_SO90",
+        "note": "까르투하 커트러리 (conf=high)"
+      },
+      {
+        "step": "2_result",
+        "url": "https://shop.srookpay.com/eiumcompany/Detail/SEI53322094",
+        "note": "status=200 title=홈앤홈 X 까르투하 커트러리 [공동구매]"
+      },
+      {
+        "step": "2_judge",
+        "note": "상품페이지 / final=True / URL에 Detail 식별자와 페이지 제목(og:title) '홈앤홈 X 까르투하 커트러리 [공동구매]'가 있어 특정 상품의 상세페이지로 판단됨"
+      }
+    ],
+    "final": {
+      "final_url": "https://shop.srookpay.com/eiumcompany/Detail/SEI53322094",
+      "name": "홈앤홈 X 까르투하 커트러리",
+      "price": null,
+      "image_saved": true
+    },
+    "resolved_at": "2026-07-13T13:37:20"
+  },
+  {
+    "id": "Dap0xZVBQx5",
+    "platform": "instagram",
+    "original_url": "https://www.instagram.com/reels/Dap0xZVBQx5/",
+    "original_caption": "💛 슈슈아띠 테이블매트 공구중\n\n식탁 위 분위기를 가장 쉽게 바꾸는 방법, 사실 이거 하나예요.\n슈슈아띠 테이블매트는 그냥 깔아두는 순간\n테이블이 정리된 느낌으로 바뀌는 아이템이에요.\n\n일반적인 얇고 흐물한 매트랑 다르게\n탄탄하게 힘이 있어서 자연스럽게\n트레이처럼도 활용이 가능해요.\n식사할 때는 물론이고 커피 한 잔 올려두는 시간\n아이 간식 플레이팅할 때도 깔끔하게 공간이 정돈돼 보여요\n\n한 장인데 앞뒤 컬러가 달라서\n뒤집어서 쓰면 분위기가 달라지고\n하나로 두 가지 무드를 연출할 수 있는 점도\n은근히 만족도가 높아요 ✨\n\n물이나 음식이 묻어도 부담 없는 생활방수 소재라\n가볍게 물티슈로 닦아주면 금방 깔끔해지고\n관리 스트레스가 거의 없는 편이에요.\n\n특히 세라믹 식탁 쓰시는 분들은\n식기 내려놓을 때 생기는 소리나 생활 스크래치 때문에\n신경 쓰이는데 이 제품 하나로 그런 부분이\n확실히 편해졌다는 느낌을 많이 받으실 거예요.\n\n로코하우스가 소개하는 슈슈아띠 테이블매트는\n매일 쓰는 식탁을 훨씬 더 편안하고\n감각적으로 만들어주는 아이템이에요 💜\n\n🗓️ 7월10일-재고 소진시 마감\n\n💕로코하우스 프로필 링크를 확인해주세요",
+    "product_hint": "슈슈아띠 테이블매트",
+    "period_start": "2026-07-10",
+    "period_end": null,
+    "link_location": "설명_프로필안내",
+    "hops": [
+      {
+        "step": "1_fetch",
+        "url": "https://link.inpock.co.kr/roco_house"
+      },
+      {
+        "step": "1_result",
+        "url": "https://link.inpock.co.kr/roco_house",
+        "note": "status=200 title=roco_house | 인포크링크"
+      },
+      {
+        "step": "1_judge",
+        "note": "링크모음 / final=False / 도착한 페이지는 link.inpock의 프로필/링크허브(roco_house | 인포크링크)로 보이며, JSON-LD 상품명·가격이 없고 페이지는"
+      },
+      {
+        "step": "1_links",
+        "note": "22개 후보 링크 (링크모음)"
+      },
+      {
+        "step": "1_pick",
+        "url": "https://link.inpock.co.kr/api/r/z8O2-xLg4JJgJvoJOmcKyTYIfpFcjk_XF0HYk6Srxk4a9-q7fBlTgKve3iir4hXMBuhDYMwmMhcshB5-reXVUX60cHBInIfcBQVS5ifs3qA_af67-Ab6q1k-4htkRpzt3U48ON3CfdIBY3LEgXTGLUzVRGPTjOSzlCkJG8AP5_YBhbPszURW6pDp8ALti9GtOA",
+        "note": "슈슈아띠 테이블매트 (conf=high)"
+      },
+      {
+        "step": "2_result",
+        "url": "https://rocohouse.co.kr/goods/goods_info.wiz?Seq=53595",
+        "note": "status=200 title=로코하우스-슈슈아띠 테이블매트☆2차"
+      },
+      {
+        "step": "2_judge",
+        "note": "상품페이지 / final=True / 페이지 URL(goods_info)와 og:title('로코하우스-슈슈아띠 테이블매트☆2차')이 상품 상세 페이지 형식이며, 도메인(rocoho"
+      }
+    ],
+    "final": {
+      "final_url": "https://rocohouse.co.kr/goods/goods_info.wiz?Seq=53595",
+      "name": "슈슈아띠 테이블매트",
+      "price": null,
+      "image_saved": false
+    },
+    "resolved_at": "2026-07-13T13:52:58"
+  },
+  {
+    "id": "DapdHZ0zGIB",
+    "platform": "instagram",
+    "original_url": "https://www.instagram.com/p/DapdHZ0zGIB/",
+    "original_caption": "안녕하세요 다다입니다\n글래드 매직랩 & 매직백 공구를 기다려주시고\n구매해주신 여러분들께 진심으로 감사드립니다. \n\n다름이 아니오라,\n\n주말사이 공구 품목 중 일부 품목에 한하여\n타채널의 일시적 할인쿠폰이 발생, \n최종쿠폰적용가가 공구가보다 낮다는 사실을\n확인했습니다. \n\n다다살림 공동구매를 통해\n구매해주신 여러분들께\n늘 약속드리는 \n<최저가 보장 원칙> 에 따라 \n그 차액 이상 네이버페이 포인트를 지급해드릴 예정입니다.\n\n또한\n지금부터 공구마감시까지 \n최저가 공구금액을 하향조정하여\n앞으로 구매하시는 분들도\n같은 혜택을 받으실 수 있도록 하겠습니다.\n\n구매에 걱정을 끼쳐 드린 점 다시 한번 죄송해요. \n앞으로도 늘 믿고 구매하실 수 있도록\n책임지는 다다가 되겠습니다.\n\n▫️보상 내역\n🔸옵션 1번 구매자 네이버페이 2천원권\n🔸옵션 2번 구매자 네이버페이 4천원권\n\n▫️네이버 포인트는 별도 입력 절차없이 주문 주신 네이버 아이디로 지급될 예정입니다. \n\n▫️구매확정 후 2주 이내 발송 예정입니다.\n\n감사합니다\n다다살림의 김다혜 드림.",
+    "product_hint": "글래드 매직랩 & 매직백",
+    "period_start": null,
+    "period_end": null,
+    "link_location": "설명_프로필안내",
+    "hops": [
+      {
+        "step": "1_fetch",
+        "url": "https://link.inpock.co.kr/dadasalrim"
+      },
+      {
+        "step": "1_result",
+        "url": "https://link.inpock.co.kr/dadasalrim",
+        "note": "status=200 title=dadasalrim | 인포크링크"
+      },
+      {
+        "step": "1_judge",
+        "note": "링크모음 / final=False / 도메인과 제목이 인포크 링크(링크 모음/랜딩) 형식임(link.inpock.co.kr, '인포크링크'). 페이지에 JSON-LD 상품명·가격 정"
+      },
+      {
+        "step": "1_links",
+        "note": "52개 후보 링크 (링크모음)"
+      },
+      {
+        "step": "1_pick",
+        "url": "https://link.inpock.co.kr/api/r/ycPtGs9oX8r5xmV97kmyZYQbD2gjH0VDoFMIQc8D1qJ6oAkNlm_k4ApQ3yXGZdxZ1O9tmcIG92jLBXXAbPJFsX7CnGLQTQC0j8BgyV8J7ZfIPHP-P0PPKIWiom4g1RHBEE3bqujgbYotb3o_SZwZbDkI_Zg33YGYsWCxYIRozaDBm4M",
+        "note": "글래드 매직랩 & 매직백\n\nBest 구성 총출동⭐️ (conf=high)"
+      },
+      {
+        "step": "2_result",
+        "url": "https://brand.naver.com/gladkorea/products/13471783713?NaPm=ct%3D1jtct5asf%7Cci%3Dshopn%7Ctr%3Dmktlnk%7Chk%3D37156f3ee5a8e7d5244c25a6350584e2d3e63352%7Ctrx%3Dundefined",
+        "note": "status=200 title=매직랩 매직백 슬라이드랩 코스트코·이마트·트레이더스 : 글래드코리아"
+      },
+      {
+        "step": "2_judge",
+        "note": "상품페이지 / final=True / 원본 포스트가 홍보한 '글래드 매직랩 & 매직백'과 페이지의 JSON-LD 상품명·og:title이 일치하며 도메인(brand.naver.com"
+      }
+    ],
+    "final": {
+      "final_url": "https://brand.naver.com/gladkorea/products/13471783713?NaPm=ct%3D1jtct5asf%7Cci%3Dshopn%7Ctr%3Dmktlnk%7Chk%3D37156f3ee5a8e7d5244c25a6350584e2d3e63352%7Ctrx%3Dundefined",
+      "name": "[글래드 x 다다살림] 매직랩 매직백 BEST구성 : 글래드코리아",
+      "price": 27900,
+      "image_saved": true
+    },
+    "resolved_at": "2026-07-13T13:53:44"
+  },
+  {
+    "id": "sBcQ3pg1-2Y",
+    "platform": "youtube",
+    "original_url": "https://www.youtube.com/watch?v=sBcQ3pg1-2Y",
+    "original_caption": "\"러쉬 타임만 되면 밀려드는 빌지 때문에 손이 부들부들 떨리시나요? 🥶\"\n\"그라인딩 기다리는 그 5초, 10초가 모여 손님을 놓치고 있다면?\"\n\n바쁜 매장, 프랜차이즈, 그리고 대형 카페 창업을 준비 중이신 사장님들이라면 무조건 주목해야 할 역대급 속도의 그라인더, '콤팍 볼트(COMPAK BOLT)'를 소개합니다! 지난 2년 전 완판 이후 드디어 소량 재입고되었습니다 🥳\n\n📌 이번 영상의 핵심 포인트\n프리도즈(Pre-Dose) 모드: 포타필터를 대자마자 원두가 1초 만에 툭! 마치 직원 한 명이 옆에서 계속 원두를 미리 갈아주는 듯한 미친 작업 속도를 경험해보세요.\n\nGBW급 소름 돋는 정확도: 무게 기반이 아닌 시간 기반 그라인더인데 편차가 고작 0.2~0.3g?! 바쁜 러쉬 타임에 저울 없이도 일관된 추출을 유지할 수 있는 비결을 직접 검증했습니다.\n\n공구 없는 5초 분해 청소: 매일 마감 청소로 스트레스 받으셨죠? 나사 하나 풀 - 필요 없이 손으로 툭 제끼면 끝나는 초간편 관리 시스템!\n\n⏳ 타임라인\n00:00 번개처럼 빠른 그라인더?\n00;37 프리도즈 vs 프레시 모드\n02:54 1초 만에 담기는 '프리도즈'\n04:44 프리도즈 분쇄 오차 측정\n06:49 부드럽고 명확한 분쇄도 조절\n07:27 콤팍 볼트의 커피 맛 성향\n07:51 공구 없는 초간편 분해 청소\n10:02 바쁜 매장을 위한 최적의 선택\n\n🎁 [람쥐초이스] 단독 특별 할인 혜택\n\n이벤트 기간: 7월 정해진 기간 동안 한정 수량 진행\n\n구매 링크: https://coffeeramg.com/surl/P/581\n\n장비 상담 및 문의: 카카오톡 채널 '람쥐몰'로 연락 주시면 직접 친절하게 상담을 도와드립니다!\n\n궁금한 점이 있으시다면 언제든 댓글로 남겨주세요. 답글로 답변해 드리겠습니다!\n오늘도 영상 시청해 주셔서 감사합니다. 구독과 좋아요는 큰 힘이 됩니다\n\n#카페창업 #그라인더 #그라인더추천\n----------------------\n✍ 온라인 강의 '람쥐클래스' | https://ramgclass.com\n✍ 오프라인 교육문의 | https://pf.kakao.com/_xbxoyNb\n\n🎁 커피쇼핑몰 람쥐몰 | https://coffeeramg.com/\n\n✅ 네이버 카페[람쥐의 커피광장] | https://cafe.naver.com/coffeeramg\n\n🔗 인스타 :   / coffee.ram_g  \n\n♥ 멤버십 가입 : https://bit.ly/48OVZoV\n\n📞 협업 제안 이메일 : famous_coffee@naver.com",
+    "product_hint": "콤팍 볼트(COMPAK BOLT) 그라인더",
+    "period_start": null,
+    "period_end": null,
+    "link_location": "설명_직접링크",
+    "hops": [
+      {
+        "step": "1_fetch",
+        "url": "https://coffeeramg.com/surl/P/581"
+      },
+      {
+        "step": "1_result",
+        "url": "https://coffeeramg.com/surl/P/581",
+        "note": "status=200 title=[람쥐초이스] 작업속도를 2배 올려줄 역대급 그라인더! 콤팍 볼트 - 람쥐몰"
+      },
+      {
+        "step": "1_judge",
+        "note": "상품페이지 / final=True / 원본 포스트의 구매 링크와 URL 일치(https://coffeeramg.com/surl/P/581). 페이지의 JSON-LD·og:title에"
+      }
+    ],
+    "final": {
+      "final_url": "https://coffeeramg.com/surl/P/581",
+      "name": "[람쥐초이스] 작업속도를 2배 올려줄 역대급 그라인더! 콤팍 볼트",
+      "price": 3850000,
+      "image_saved": true
+    },
+    "resolved_at": "2026-07-13T13:31:05"
+  },
+  {
+    "id": "PsxJo3tF8Rk",
+    "platform": "youtube",
+    "original_url": "https://www.youtube.com/watch?v=PsxJo3tF8Rk",
+    "original_caption": "국물 / 짜장 / 마라 3가지 떡볶이 5개가 19,900원! 공동구매 가격 구입 링크\nhttps://m.site.naver.com/1XLn0 \n-----------------------------------\n놀고싶다 채널의 골든글러브 회원이 되어주세요!\n놀고싶다와 멤버십 회원이 소통 할 수 있는 오픈 채팅방에서\n소통할 수 있는 기회를 드립니다.\n   / @놀고싶다  ",
+    "product_hint": "국물/짜장/마라 떡볶이 5개 (19,900원)",
+    "period_start": null,
+    "period_end": null,
+    "link_location": "설명_직접링크",
+    "hops": [
+      {
+        "step": "1_fetch",
+        "url": "https://m.site.naver.com/1XLn0"
+      },
+      {
+        "step": "1_result",
+        "url": "https://smartstore.naver.com/romanticsp/products/12829837536?NaPm=ct%3D1jtcrsgai%7Cci%3Dshopn%7Ctr%3Dmktlnk%7Chk%3D85a023323ad5d88f9b2d9b57292188efb1240de8%7Ctrx%3Dundefined",
+        "note": "status=200 title=[공동구매 떡볶이만드는녀석들] 오리지널 국물 / 짜장 / 마라 떡볶이 5종 세트, 놀고싶다 링크 : 약속의 8회"
+      },
+      {
+        "step": "1_judge",
+        "note": "상품페이지 / final=True / 스마트스토어의 상품 상세 페이지이며 JSON-LD 상품명과 og:title이 원본 포스트의 '국물/짜장/마라 떡볶이 5개'과 일치하고, 표시 가"
+      }
+    ],
+    "final": {
+      "final_url": "https://smartstore.naver.com/romanticsp/products/12829837536?NaPm=ct%3D1jtcrsgai%7Cci%3Dshopn%7Ctr%3Dmktlnk%7Chk%3D85a023323ad5d88f9b2d9b57292188efb1240de8%7Ctrx%3Dundefined",
+      "name": "[공동구매 떡볶이만드는녀석들] 오리지널 국물 / 짜장 / 마라 떡볶이 5종 세트, 놀고싶다 링크 : 약속의 8회",
+      "price": 19900,
+      "image_saved": true
+    },
+    "resolved_at": "2026-07-13T13:31:19"
   }
 ]

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """case_test_run.json에서 status=='done'인 성공 케이스만 뽑아 별도 파일로 저장한다.
 원본 포스트 내용(캡션/제목)까지 같이 붙여서, 입력→출력이 한 파일에서 다 보이게 한다."""
+import glob
 import json
 import pathlib
 
@@ -10,11 +11,11 @@ SAMPLES = ROOT / 'data/samples'
 OUT_FILE = ROOT / 'data/results/success_cases.json'
 
 posts_by_id = {}
-for fname in ('case_sample_ig_100.json', 'case_sample_yt_100.json'):
-    fp = SAMPLES / fname
-    if fp.exists():
-        for it in json.load(open(fp, encoding='utf-8')):
-            posts_by_id[it['id']] = it
+for tag in ('ig', 'yt'):
+    for f in sorted(glob.glob(str(SAMPLES / f'case_sample_{tag}_*.json'))):
+        for it in json.load(open(f, encoding='utf-8')):
+            if it['id'] not in posts_by_id:
+                posts_by_id[it['id']] = it
 
 records = json.load(open(STORE_FILE, encoding='utf-8'))
 success = [r for r in records if r['status'] == 'done']
