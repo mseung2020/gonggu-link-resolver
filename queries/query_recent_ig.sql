@@ -6,6 +6,6 @@ SELECT p.post_id, p.user_id, p.url, p.publish_date, p.is_reel, p.thumbnail, p.li
        d.description
 FROM hifen.instagram_post p
 JOIN hifen.instagram_post_description d ON d.post_id = p.post_id
-WHERE p.publish_date >= '2026-07-06'
+WHERE p.publish_date >= '2026-07-07'
   AND (d.description LIKE '%공구%' OR d.description LIKE '%공동구매%')
 ORDER BY p.publish_date DESC;

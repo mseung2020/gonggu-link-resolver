@@ -7,6 +7,6 @@ SELECT d.video_id, d.title, d.publishDate, d.video_description,
        v.channel_id, v.views, v.likes, v.comments, v.subscribers, v.video_thumbnails_url, v.genre
 FROM hifen.YT_video_lists_detail d
 LEFT JOIN hifen.YT_video_lists v ON v.video_id = d.video_id
-WHERE d.publishDate >= '2026-07-06'
+WHERE d.publishDate >= '2026-07-07'
   AND (d.video_description LIKE '%공구%' OR d.video_description LIKE '%공동구매%')
 ORDER BY d.publishDate DESC;

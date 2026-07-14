@@ -39,8 +39,8 @@ def already_sampled_ids(platform):
     return ids
 
 
-def sample(rows, id_key, platform, out_file):
-    seen = already_sampled_ids(platform)
+def sample(rows, id_key, platform, tag, out_file):
+    seen = already_sampled_ids(tag)
     fresh = [r for r in rows if r[id_key] not in seen]
     picked = random.Random(SEED).sample(fresh, min(N, len(fresh)))
     merged = []
@@ -59,5 +59,5 @@ suffix = f'_{BATCH}' if BATCH else ''
 ig_rows = load_json(IG_RAW)
 yt_rows = load_json(YT_RAW)
 
-sample(ig_rows, 'post_id', 'instagram', f'case_sample_ig{suffix}_100.json')
-sample(yt_rows, 'video_id', 'youtube', f'case_sample_yt{suffix}_100.json')
+sample(ig_rows, 'post_id', 'instagram', 'ig', f'case_sample_ig{suffix}_100.json')
+sample(yt_rows, 'video_id', 'youtube', 'yt', f'case_sample_yt{suffix}_100.json')
