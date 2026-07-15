@@ -233,6 +233,10 @@ def extract_collection_links(page):
         href, text = l.get('href', ''), l.get('text', '')
         if not href or href in seen or any(d in href for d in BAD_DOMAINS):
             continue
+        # <a href="javascript:check_cart(...)">처럼 실제 이동이 아니라 버튼 역할만 하는 pseudo-URL —
+        # normalize_url이 이걸 실제 URL로 오인해서 https://를 붙여버리면 Page.goto가 그대로 죽는다.
+        if re.match(r'^(javascript|mailto|tel):', href, re.I):
+            continue
         if href.split('#')[0] == current_no_frag:
             continue
         seen.add(href)
@@ -302,6 +306,15 @@ def first_usable_url(urls, url_type=None):
         if '...' not in u:
             return u
     return urls[0]
+
+
+def hint_is_vague(hint):
+    """product_hint가 "OO마켓 상품"/"OO샵 신상품"처럼 특정 상품명이 아니라 스토어명+일반명사뿐이면,
+    스토어메인의 카탈로그(수십~수백개)를 거쳐 고른 아무 상품이나 LLM#3가 "일치"로 통과시켜버린다
+    (실측: "로디마켓 상품" 힌트로 재실행마다 다른 무작위 상품이 done으로 확정되는 걸 확인, 2026-07-14).
+    이런 힌트는 스토어메인 경유 결과를 신뢰할 수 없으니 done 대신 hold로 돌려 사람이 보게 한다."""
+    h = (hint or '').strip()
+    return bool(re.match(r'^\S+\s*(마켓|샵|스토어|몰|숍)\s*(상품|제품|아이템)$', h))
 
 
 def post_context_text(item):
@@ -434,6 +447,13 @@ def resolve_item(page, item):
                     f"{(verdict.get('reason') or '')[:80]}"})
 
         if verdict.get('page_type') == '상품페이지' and verdict.get('is_final_product_page'):
+            if hint_is_vague(lc.get('product_hint')):
+                # product_hint가 스토어명+일반명사뿐이라 "일치" 판정 자체를 신뢰할 수 없음 —
+                # done으로 자동 확정하지 않고 사람이 볼 수 있게 hold로 넘긴다.
+                store.update(item['id'], status='hold',
+                             error=f"product_hint(\"{lc.get('product_hint')}\")가 너무 일반적이라 "
+                                   f"이 상품페이지({r['title']})와의 일치를 자동으로 확정할 수 없음 — 사람 검토 필요")
+                return
             img_url = r['jsonld'].get('image') or r['og_image']
             img_ok = download_image(ctx_holder['ctx'], img_url, item['id']) if img_url else False
             store.update(item['id'], status='done', final={
@@ -464,7 +484,14 @@ def resolve_item(page, item):
             if idx is None or idx < 0 or idx >= len(links):
                 store.update(item['id'], status='unresolved', error='LLM#2가 적합한 링크를 못 찾음')
                 return
-            if page_type == '스토어메인' and confidence != 'high':
+            # 2026-07-14 실험: medium/low 확신도 33건을 임시로 다 통과시켜서 실제로 몇 건이나 틀린 상품을
+            # "일치"로 잘못 확정하는지 확인함 — medium 23건 중 오탐 0건(1건만 진짜 성공, 나머지는 그냥
+            # 다음 홉에서 로그인월차단/최대홉 등 다른 정당한 사유로 다시 막힘 → LLM#3의 최종 일치검증이
+            # 별도 안전장치로 이미 작동하고 있어서 medium까지는 오탐 위험이 실질적으로 없었음).
+            # low 15건 중에서는 1건이 오탐(product_hint가 "로디마켓 상품"처럼 너무 모호해서 카테고리의
+            # 아무 상품이나 "일치"로 통과됨) — 그래서 medium까지만 허용하고 low는 계속 막는다.
+            STOREMAIN_OK_CONF = os.environ.get('STOREMAIN_OK_CONF', 'high,medium').split(',')
+            if page_type == '스토어메인' and confidence not in STOREMAIN_OK_CONF:
                 store.update(item['id'], status='unresolved',
                              error=f'스토어메인 후보 중 확신도 낮음(conf={confidence}) — 오탐 방지로 채택 안 함')
                 return

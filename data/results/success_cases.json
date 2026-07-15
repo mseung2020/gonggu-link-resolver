@@ -1937,6 +1937,74 @@
     "resolved_at": "2026-07-13T13:53:44"
   },
   {
+    "id": "DajcJDfBRWE",
+    "platform": "instagram",
+    "original_url": "https://www.instagram.com/reels/DajcJDfBRWE/",
+    "original_caption": "💛 쉬젤 러반 무선3in1 에어믹서 블렌더 공구오픈\n\n한 번 쓰면 유선으로는 다시 못 돌아가요.\n주방에서 이것저것 꺼내는 번거로움\n이제 정말 줄어들어요.\n\n쉬젤 러반 무선3in1 에어믹서 블렌더는\n초퍼와 핸드블렌더를 하나로 사용할 수 있어서\n재료 손질부터 블렌딩까지 자연스럽게 이어져요.\n\n전선이 없으니 사용하는 내내 움직임도 편하고,\n냄비에서 바로 갈 수 있어 설거지까지 줄어드는 기분이더라고요.🤍\n\n작은 크기인데도 힘이 정말 좋아서\n얼음은 물론 고기, 마늘, 양파, 과일까지\n막힘 없이 빠르게 갈아줘요.\n\n머랭 툴도 함께 들어 있어 휘핑도 훨씬 간편하고\n홈베이킹 즐기시는 분들께도 만족도가 높은 구성이에요.\n\n배터리는 한 번 충전하면 오래 사용할 수 있어서\n여러 가지 재료를 연달아 준비해도 걱정 없고,\n사용 후에는 공간도 많이 차지하지 않아\n주방이 훨씬 깔끔해져요.\n\n이번 로코하우스에서는 쉬젤 러반 무선3in1 에어믹서 블렌더를\n9만원대 런칭 특가로 준비했어요.\n합리적인 가격으로 만나볼 수 있는 기회 놓치지 마세요. 😘\n\n🗓️ 7월9일-재고 소진시 마감\n\n💕로코하우스 프로필 링크를 확인해주세요",
+    "product_hint": "쉬젤 러반 무선3in1 에어믹서 블렌더",
+    "period_start": "2026-07-09",
+    "period_end": null,
+    "link_location": "설명_프로필안내",
+    "hops": [
+      {
+        "step": "1_fetch",
+        "url": "https://link.inpock.co.kr/roco_house"
+      },
+      {
+        "step": "1_result",
+        "url": "https://link.inpock.co.kr/roco_house",
+        "note": "status=200 title=roco_house | 인포크링크"
+      },
+      {
+        "step": "1_judge",
+        "note": "링크모음 / final=False / 해당 페이지는 link.inpock.co.kr의 프로필/링크허브로 여러 상품(예: 신일 제습기, 래폴드 수납함, 러반 304스퀘어 밧드 등)을 "
+      },
+      {
+        "step": "1_links",
+        "note": "19개 후보 링크 (링크모음)"
+      },
+      {
+        "step": "1_pick",
+        "url": "https://link.inpock.co.kr/api/r/mCH_HJW58oytTWpDfSgwviWPaRE4WZ1Zv9TuxL_km_6uyIwWbLbzNRQNY1BjQMk4xjwS8PEukiaqdq0obwhOCXfWt6TIe_2EOdOOx_7Dzt_oKNmqzrDZnePC5pIDCnJjMDN7hxB0LZl3BAGF_5acvohdOQ",
+        "note": "로코하우스 전체 상품 보러가기 (conf=medium)"
+      },
+      {
+        "step": "2_result",
+        "url": "https://rocohouse.co.kr/",
+        "note": "status=200 title=로코하우스"
+      },
+      {
+        "step": "2_judge",
+        "note": "스토어메인 / final=False / 쇼핑몰 메인/목록 페이지로 여러 상품이 나열되어 있음(상품 리스트·여러 가격 표기). 목록에 '쉬젤 러반 무선 3in1 에어믹서 블렌더 99,8"
+      },
+      {
+        "step": "2_links",
+        "note": "50개 후보 링크 (스토어메인)"
+      },
+      {
+        "step": "2_pick",
+        "url": "https://rocohouse.co.kr/goods/goods_info.wiz?Seq=53531",
+        "note": "71%\n쉬젤 러반 무선 3in1 에어믹서 블렌더\n338,800원99,800원 (conf=high)"
+      },
+      {
+        "step": "3_result",
+        "url": "https://rocohouse.co.kr/goods/goods_info.wiz?Seq=53531",
+        "note": "status=200 title=로코하우스-쉬젤 러반 무선 3in1 에어믹서 블렌더"
+      },
+      {
+        "step": "3_judge",
+        "note": "상품페이지 / final=True / 페이지 본문과 og:title에 상품명 '쉬젤 러반 무선 3in1 에어믹서 블렌더'가 명시되어 있고, 판매가(99,800원), '구매하기/장바구"
+      }
+    ],
+    "final": {
+      "final_url": "https://rocohouse.co.kr/goods/goods_info.wiz?Seq=53531",
+      "name": "쉬젤 러반 무선 3in1 에어믹서 블렌더",
+      "price": null,
+      "image_saved": false
+    },
+    "resolved_at": "2026-07-14T17:10:30"
+  },
+  {
     "id": "DajVAHZEx4t",
     "platform": "instagram",
     "original_url": "https://www.instagram.com/p/DajVAHZEx4t/",
